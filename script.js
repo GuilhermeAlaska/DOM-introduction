@@ -1,57 +1,32 @@
-// Navegando pelos elementos
-// parentNode parentElement 
+// Eventos
+
+//const h1 = document.querySelector('h1');
+
+//h1.addEventListener('click', print) // Linka um evento com a função do js
+
+//h1.onclick = print  
+//h1.onclick = function(){console.log('outro momento')} // se usado onclick mais de uma vez, o que vier por último será considerado
+
+//function print(){
+//   console.log('print')}
+
+//h1.addEventListener('click', function() {console.log('segundo evento')} )
 
 
-// const body = document.querySelector('body')
+//const input = document.querySelector('input')
+// input.onkeydown = function(){
+    // console.log('rodei')}
+    // input.onkeyup = function(){ //quando soltar a telca roda a function
+        // console.log('rodei')}
+        // input.onkeypress = function(){ //qualquer clique dispara a function
+            // console.log('rodei')}
 
 
-// console.log(body.parentNode)
-// console.log(body.parentElement)
+// Argument event
+const input = document.querySelector('input')
 
-
-// const element = document.querySelector('h1')
-// console.log(element.parentElement)
-
-
-// Navegando pelos elementos
-
-// childNodes children
-//const el = document.querySelector('body')
-
-
-//console.log(el.childNodes)
-//console.log(el.children) // Não leva em conta espaços vazios
-
-
-// firstChild firstElementChild
-//console.log(el.firstChild)
-//console.log(el.firstElementChild)
-
-
-// lastChild lastElementChild
-//console.log(el.lastChild)
-//console.log(el.lastElementChild)
-
-
-// nextSibling nextElementSibling
-//console.log(el.nextElementSibling)
-//const el = document.querySelector('header')
-//console.log(el.nextSibling)
-
-
-// previousSibling previousElementSibling
-//const el = document.querySelector('body script')
-//console.log(el.previousSibling)
-//console.log(el.previousElementSibling)
-
-// Criando e adicionando elementos
-
-// createElement
-const div = document.createElement('div');
-div.innerText = "Olá Devs!"
-
-// append prepend
-const body = document.querySelector('body')
-
-//body.append(div) / Adiciona depois
-body.prepend(div) // Adiciona antes
+input.onkeypress = function(event){
+    //console.log(event)
+    //console.log(event.key) // pega a key digitada no input
+    console.log(event.currentTarget.value) // pega o valor que está sendo digitado
+}

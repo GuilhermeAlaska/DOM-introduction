@@ -6,7 +6,7 @@
 //element.textContent = "Olá Devs!"
 //element.textContent += " Olá Devs!"
 
-// innetText
+// innerText
 //element.innerText = "Hello Devs!"
 
 // innerHTML
